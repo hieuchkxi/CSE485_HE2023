@@ -1,13 +1,13 @@
 <?php
-include "XProject/repositories/UserRepository.php";
+include "XProject/repositories/EmployeesRepository.php";
 
 class UserController
 {
     public function index()
     {
         //Gọi dữ liệu ra
-        $userRepo = new UserRepository();
+        $userRepo = new EmployeesRepository();
         $users = $userRepo->getAllUsers();
-        include "XProject/User/index.php";
+        include "XProject/Employees/index.php";
     }
 }

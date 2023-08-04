@@ -1,6 +1,6 @@
 <?php
 include "XProject/lib/DBConnection.php";
-include "XProject/models/User.php";
+include "XProject/models/Employees.php";
 Class UserRepository
 {
     public function getAllUsers()
@@ -16,7 +16,7 @@ Class UserRepository
             $result = $stmt->fetchAll();
             $users = [];
             foreach ($result as $row) {
-                $user = new User();
+                $user = new Employees();
                 $user->setId($row['id']);
                 $user->setName($row['Name']);
                 $user->setAddress($row['Address']);
