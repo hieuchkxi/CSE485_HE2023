@@ -79,4 +79,7 @@ class Book implements IBook {
         $this->chapters = $chapters;
     }
 }
+class BookList{
+    
+}
 ?>
