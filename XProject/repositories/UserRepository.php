@@ -17,10 +17,10 @@ Class UserRepository
             $users = [];
             foreach ($result as $row) {
                 $user = new User();
-                $user->setUserId($row['id']);
-                $user->setEmail($row['Name']);
-                $user->setPassword($row['Address']);
-                $user->setUsername($row['Salary']);
+                $user->setId($row['id']);
+                $user->setName($row['Name']);
+                $user->setAddress($row['Address']);
+                $user->setSalary($row['Salary']);
                 array_push($users, $user);
             }
             return $users;
